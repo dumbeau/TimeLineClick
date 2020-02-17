@@ -6,7 +6,7 @@ https://github.com/UnBOlievable/MyAHKScripts/tree/master/TimelineClick
 
 3. Copy the function into a new AHK script (or use one of the example scripts).
 
-4. If using on a new program, acquire reference images for the function to look for, must be a graphic that moves with the timeline.  Save this image next to or in a folder next to the script.  I already have the images for Resolve and FL Studio in the examples.
+4. If using on a new program, acquire reference images for the function to look for, must be a graphic that moves with the timeline.  Note that these images are subject to system scaling.  Save this image next to or in a folder next to the script.  I already have the images for Resolve and FL Studio in the examples.
 
 5. Fill in the function parameters. 
 	- First is the pointer to the reference image, refer to the example.
