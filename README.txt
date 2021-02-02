@@ -1,3 +1,6 @@
+Setup video here:
+https://www.youtube.com/watch?v=Eq0yOZ_X2ho
+
 1. Make sure you have AutoHotKey installed:
 https://www.autohotkey.com/
 
