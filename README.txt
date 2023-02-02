@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=Eq0yOZ_X2ho
 https://www.autohotkey.com/
 
 2. Download timelineClick() function from my GitHub:
-https://github.com/UnBOlievable/MyAHKScripts/tree/master/TimelineClick
+https://github.com/dumbeau/TimeLineClick
 
 3. Copy the function into a new AHK script (or use one of the example scripts).
 
