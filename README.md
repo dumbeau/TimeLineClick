@@ -1,6 +1,6 @@
 ## Requirements
 1. Install AutoHotKey V1.1:
-https://www.autohotkey.com/</br>
+https://www.autohotkey.com/<br/>
 
 2. Download this codebase:
     - For `TimelineClick()` with example scripts, download this codebase:
@@ -15,13 +15,13 @@ UPDATE THIS!!!
 
 There are example scripts included for Davinci Resolve, Adobe After Effects, FL Studio and Cavalry.
 
-1. Include `TimelineClick.ahk` into your ahk script</br>
+1. Include `TimelineClick.ahk` into your ahk script<br/>
 
 ```autohotkey
 #Include, %A_ScriptDir%\TimelineClick.ahk
 ```  
 
-2. Add an `#IfWinActive` block to limit your function to an application.  Then add your hotkey block with the `TimelineClick()` function inside.</br>
+2. Add an `#IfWinActive` block to limit your function to an application.  Then add your hotkey block with the `TimelineClick()` function inside.<br/>
 
 ```autohotkey
 ;Example using FL Studio
@@ -33,13 +33,17 @@ There are example scripts included for Davinci Resolve, Adobe After Effects, FL 
 }
 ```
 
-</br>
-3. Enter the parameters for the `TimelineClick()` function.  This takes 2 or 3 parameters:
-    #### `TimelineClick( images, yOffsets, hold:=false )`
-    1. `images` : The image/images filepaths to search the screen for.  Filepath can be local or absolute.  The sourced images should move with the timeline bar when it's resized.
-        - Sourcing images: Find a section of your application's UI that moves with the timeline bar when resized.  Screenshot this section with `Win + Shift + S` and save it where it can be referenced by your script.
+
+<br/>
+3. Enter the parameters for the `TimelineClick()` function.  This takes 2 or 3 parameters.<br/>
+
+
+#### TimelineClick( images, yOffsets, hold:=false ) <br/>
+
+    1. `images` : The image/images filepaths to search the screen for.  Filepath can be local or absolute.  The sourced images should move with the timeline bar when it's resized.<br/>
+        - Sourcing images: Find a section of your application's UI that moves with the timeline bar when resized.  Screenshot this section with `Win + Shift + S` and save it where it can be referenced by your script.<br/>
     2. `yOffsets` : The vertical distance between the top-left corner of the located image and the vertical clickable region of the timeline.
-    3. `hold` : OPTIONAL: If true, stop moving the playhead (release LMB) when the hotkey is released.  This is the default value.  If false (default), playhead will only be brought to the cursor position and LMB will be released immediately.
+    3. `hold` : OPTIONAL: If true, stop moving the playhead (release LMB) when the hotkey is released.  This is the default value.  If false (default), playhead will only be brought to the cursor position and LMB will be released immediately.<br/>
 
 Here is an example for FL Studio:
 ```autohotkey    
