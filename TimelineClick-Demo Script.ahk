@@ -10,8 +10,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;TimelineClick for Adobe After Effects
 #IfWinActive, ahk_exe AfterFX.exe
 {
-    w:: ;Change hotkey to desired hotkey: https://www.autohotkey.com/docs/v1/Hotkeys.htm    
-    TimelineClick("\ImageSearch\After Effects\Flowchart-100pct.png", 8)
+    w:: ;Change hotkey to desired hotkey: https://www.autohotkey.com/docs/v1/Hotkeys.htm
+    TimelineClick("\ImageSearch\After Effects\Flowchart-100pct.png", 8)    
     return
 }
 

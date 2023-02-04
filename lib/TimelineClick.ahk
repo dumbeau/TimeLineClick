@@ -16,11 +16,20 @@ DllCall("SetThreadDpiAwarenessContext", "ptr", -3, "ptr") ;This makes screen coo
 ;###############################################################################
 
 TimelineClick(images, yOffsets, hold=True){
+
+	bareKey := TC_StripModifierCharacters(A_ThisHotkey)	
+
+	hotkeyContainsModifiers := (bareKey != A_ThisHotkey) ? true : false
+	if (hotkeyContainsModifiers){
+		; Msgbox, % bareKey
+		Hotkey, If 
+		HotKey, % bareKey, TC_Block, On
+	}
 	static g_MonitorManager
 	if !g_MonitorManager
 		g_MonitorManager := New TC_MonitorManager
 	CoordMode, Pixel, Screen
-	CoordMode, Mouse, Screen
+	CoordMode, Mouse, Screen	
 	
 	static s_lastImage, s_TagX, s_TagY, s_ImageSize, s_MonIndex	
 
@@ -88,15 +97,30 @@ TimelineClick(images, yOffsets, hold=True){
 	}
 	MouseClick, Left, MouseX, s_TagY + yOffsets[s_lastImage], ,0, D
 	MouseMove, MouseX, MouseY, 0
-	BlockInput, MouseMoveOff
+	BlockInput, MouseMoveOff	
+		
 	if (hold == True)
-		keywait, %A_ThisHotkey%
+		KeyWait, % bareKey
+	if (hotkeyContainsModifiers){
+		Hotkey, If 
+		HotKey, % bareKey, Off
+	}	
+
 	Click, up
 	Return
 }
 
 ;Helper Functions for timeline click
-
+TC_Block(){
+	return
+}
+TC_StripModifierCharacters(var, chars="+^!#")
+	{
+	   stringreplace,var,var,%A_space%,_,a
+	   loop, parse, chars,
+	      stringreplace,var,var,%A_loopfield%,,a
+	   return var
+	}
 
 TC_GetActiveMonitorDimensions(monitorManagerObj)
 	{	
@@ -201,9 +225,6 @@ TC_MonitorEnumProc(hMonitor, hdcMonitor, lprcMonitor, dwData) {
   
 	Return, 1
 }
-
-
-
 class TC_Monitor {
   __New(handle, left, top, right, bottom) {
     ;When compiled with true/pm these values are based on real pixel coordinates without scaling.
