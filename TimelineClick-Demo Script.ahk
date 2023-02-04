@@ -10,7 +10,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;TimelineClick for Adobe After Effects
 #IfWinActive, ahk_exe AfterFX.exe
 {
-    w:: ;Change hotkey to desired hotkey
+    w:: ;Change hotkey to desired hotkey: https://www.autohotkey.com/docs/v1/Hotkeys.htm    
     TimelineClick("\ImageSearch\After Effects\Flowchart-100pct.png", 8)
     return
 }
@@ -18,7 +18,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;TimelineClick for Davinci Resolve
 #IfWinActive, ahk_exe Resolve.exe ;Limit declared hotkeys in this block to this executable.
 {
-    w:: ;Change hotkey to desired hotkey: https://www.autohotkey.com/docs/v1/Hotkeys.htm    
+    w:: ;Change hotkey to desired hotkey
     TimelineClick(["\ImageSearch\Resolve\EditPageTimelineSettings.png", "\ImageSearch\Resolve\FairlightClock.png",  "\ImageSearch\Resolve\CutPageSplitClip.png"], [45,30,45])
     return
 }
