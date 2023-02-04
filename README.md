@@ -5,8 +5,8 @@ https://www.autohotkey.com/<br/>
 2. Download this codebase:
     - For `TimelineClick()` with example scripts, download this codebase:<br/>
     https://github.com/dumbeau/TimeLineClick
-    - For includable `TimelineClick()` function for your own script.<br/>
-    LINK TO TIMELINECLICK FILE !!!
+    - For includable `TimelineClick()` function for your own script from the releases section.<br/>
+    https://github.com/dumbeau/TimeLineClick/releases/download/v2.0.0/TimelineClick.ahk
 
 ## Setup
 
