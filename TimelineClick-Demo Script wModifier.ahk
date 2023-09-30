@@ -28,7 +28,7 @@ Return
 #If InputMod == 1 && WinActive("ahk_exe Resolve.exe") ;Limit declared hotkeys in this block to this executable when InputMod == 1
 {
     LButton:: ;Change hotkey to desired hotkey, this means you will have to hold the "Back" button down and press LMB
-    TimelineClick(["\ImageSearch\Resolve\EditPageTimelineSettings.png", "\ImageSearch\Resolve\FairlightClock.png",  "\ImageSearch\Resolve\CutPageSplitClip.png"], [45,30,45])
+    TimelineClick(["\ImageSearch\Resolve\EditPageTimelineSettings.png", "\ImageSearch\Resolve\FairlightClock.png",  "\ImageSearch\Resolve\CutPageSplitClip.png"], [65,30,45])
     return
 }
 
