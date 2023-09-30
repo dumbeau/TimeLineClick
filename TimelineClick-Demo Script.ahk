@@ -19,7 +19,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #IfWinActive, ahk_exe Resolve.exe ;Limit declared hotkeys in this block to this executable.
 {
     w:: ;Change hotkey to desired hotkey
-    TimelineClick(["\ImageSearch\Resolve\EditPageTimelineSettings.png", "\ImageSearch\Resolve\FairlightClock.png",  "\ImageSearch\Resolve\CutPageSplitClip.png"], [45,30,45])
+    TimelineClick(["\ImageSearch\Resolve\EditPageTimelineSettings.png", "\ImageSearch\Resolve\FairlightClock.png",  "\ImageSearch\Resolve\CutPageSplitClip.png"], [65,30,45])
     return
 }
 
