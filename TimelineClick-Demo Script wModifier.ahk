@@ -31,8 +31,7 @@ Return
     ; Resolve v18
         ; TimelineClick(["\ImageSearch\Resolve\18\EditPageTimelineSettings.png", "\ImageSearch\Resolve\18\FairlightClock.png",  "\ImageSearch\Resolve\18\CutPageSplitClip.png"], [65,30,45])
     ;Resolve v19
-        TimelineClick(["\ImageSearch\Resolve\19\
-        EditPageTimelineSettings.png", "\ImageSearch\Resolve\19\CutPageHamburger.png"], [65, 45])
+        TimelineClick(["\ImageSearch\Resolve\19\EditPageTimelineSettings.png", "\ImageSearch\Resolve\19\CutPageHamburger.png"], [65, 45])
     return
 }
 
