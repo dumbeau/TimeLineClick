@@ -20,9 +20,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
     w:: ;Change hotkey to desired hotkey
         ; Resolve v18
-    ; TimelineClick(["\ImageSearch\Resolve\18\EditPageTimelineSettings.png", "\ImageSearch\Resolve\18\FairlightClock.png",  "\ImageSearch\Resolve\18\CutPageSplitClip.png"], [65,30,45])
+    ; TimelineClick(["\ImageSearch\Resolve\18\EditPageTimelineSettings.png", "\ImageSearch\Resolve\18\FairlightClock.png",  "\ImageSearch\Resolve\18\CutPageSplitClip.png"], [45,30,45])
     ;Resolve v19
-    TimelineClick(["\ImageSearch\Resolve\19\EditPageTimelineSettings.png", "\ImageSearch\Resolve\19\CutPageHamburger.png"], [65, 45])
+    TimelineClick(["\ImageSearch\Resolve\19\EditPageTimelineSettings.png", "\ImageSearch\Resolve\19\CutPageHamburger.png"], [45, 45])
     return
 }
 
